@@ -1,11 +1,15 @@
 import { Perfil } from "@/Componentes/Perfil";
+import Link from "next/link";
 
 
 export default function Home() {
   return (
     <>
-    <Perfil/>
-    <Perfil/>
+      <nav>
+        <Link href="/Pagina1">Pagina 1</Link> 
+      </nav>
+    <Perfil Nombre="Guido Andres" Apellido="Araya Gutierrez" edad={21}/>
+    <Perfil Nombre="Luis Sebastian" Apellido="Araya Moreno" edad={10}/>
     </>
   );
 }
